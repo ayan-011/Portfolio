@@ -7,7 +7,10 @@ const buttons = [
 ];
 const LeftSidebar = () => {
   return (
-    <div className="w-full h-full bg-black rounded-lg p-5 gap-y-2 flex flex-col md:max-w-xs overflow-y-auto scrollbar-hidden">
+    <>
+    
+  
+    <div className="w-full  h-full bg-black rounded-lg   gap-y-2 md:flex flex-col   overflow-y-auto scrollbar-hidden hidden  ">
 
       {/* Profile Card */}
       <div className="rounded-2xl w-full border border-zinc-900 flex flex-col">
@@ -40,14 +43,14 @@ const LeftSidebar = () => {
       </div>
 
       {/* Buttons Section */}
-      <div className="rounded-2xl w-full h-screen py-8 border border-zinc-900 flex flex-col relative">
+      <div className="rounded-2xl w-full h-screen py-8 flex flex-col relative border  border-zinc-900 ">
 
         <div className="buttons flex flex-col">
           {buttons.map((btn, index) => (
             <button
              key={index}
              to={btn.path}
-              className="p-3 font-inherit  md:text-[23px] tracking-tight   bg-red-90  text-white hover:bg-zinc-950   w-full transition-all duration-200 cursor-pointer"
+              className="p-3 font-inherit  md:text-[23px] tracking-tight text-white hover:bg-zinc-950   w-full transition-all duration-200 cursor-pointer"
             >
              {btn.label}
             </button>
@@ -62,7 +65,30 @@ const LeftSidebar = () => {
         </div>
       </div>
 
+ 
     </div>
+
+
+     {/* for mobiles */}
+
+     <div className="bg-zinc-900 w-full py-3 h-full md:hidden flex rounded-md flex-col items-center gap-2 ">
+          <div className="profilePhoto w-fit bg-red-90 flex flex-col justify-center items-center gap-2 h-fit p-1 ">
+            <div className="w-13 h-13 rounded-full bg-black border-[1px]  border-zinc-500"></div>
+            <span className="name text-white text-[12px]" >Name Saifi</span>
+          </div>
+
+          <div className="icons w-full h-full bg-red-90 py-6 border-t-[1px] border-b-0 border-r-0 border-l-0 border-zinc-800 ">
+            <div className=" flex flex-col items-center  gap-6">
+              <div className="w-9 h-9 bg-black"></div>
+              <div className="w-9 h-9 bg-black"></div>
+              <div className="w-9 h-9 bg-black"></div>
+              <div className="w-9 h-9 bg-black"></div>
+            </div>
+          </div>
+     </div>
+    
+  </>
+
   );
 };
 
