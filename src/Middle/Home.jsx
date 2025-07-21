@@ -7,7 +7,7 @@ const Home = () => {
     <>
     <div className='bg-zinc  w-full h-full  text-white bg-'> 
  
-    <div className="navbar w-full top-0 fixed ">
+    <div className="navbar w-full  ">
       <Navbar/>
     </div>
 

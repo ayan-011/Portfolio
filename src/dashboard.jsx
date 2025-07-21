@@ -11,17 +11,20 @@ function Dashboard() {
         <LeftSidebar />
       </div>
 
-      {/* Right Sidebar (Fixed) */}
 
       {/* Middle Content (Scrollable) */}
       <div className="absolute top-0 md:left-[20%] md:right-[20%] left-[20%] right-[0%]  h-screen overflow-y-scroll border border-l-[1px] md:border-r-[1px] border-r-0 border-t-0 border-b-0 border-zinc-900 scrollbar-hidden">
-        <div className="h-[200vh]  text-white">
+        <div className="h-[200vh]  text-white w-full">
           <Home />
           
         </div>
       </div>
 
-      <div className=" fixed top-0 right-0 h-screen w-1/5 bg-green-900 z-10 md:flex hidden   "></div>
+      {/* Right Sidebar (Fixed) */}
+      <div className=" fixed top-0 right-0 h-screen w-1/5 bg-green-90 z-10 md:flex hidden   ">
+      </div>
+
+
     </div>
   )
 }
