@@ -9,3 +9,20 @@
 .font-inherit {
     font-family: inherit;
 }
+
+.v .border-b {
+  border: none;
+  border-bottom: 1px solid #3e4144;
+}
+.v .border-l {
+  border: none;
+  border-bottom: 1px solid #3e4144;
+}
+.v .border-r {
+  border: none;
+  border-bottom: 1px solid #3e4144;
+}
+.v .border-t {
+  border: none;
+  border-bottom: 1px solid #3e4144;
+}
