@@ -12,7 +12,7 @@ const Home = () => {
 
           {/* <div className="w-full p-12  bg-whit"> </div> */}
 
-          <div className='w-3/4 select-none '>
+          <div className='w-3/4 select-none md:text-base text-[12px]'>
             I’m a full-stack web developer who enjoys building clean and  useful web apps.
             <br />
             <br />
