@@ -1,8 +1,16 @@
 import React from 'react'
+import ProjectCard from '../project/ProjectCard'
+import { ProjectGrid } from '../project/Project'
+ 
+
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className=''>
+      
+      <ProjectGrid/>
+
+    </div>
   )
 }
 
