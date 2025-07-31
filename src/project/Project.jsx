@@ -3,17 +3,34 @@ import ProjectCard from "./ProjectCard"
 const PROJECTS = [
 
     {
-        image : '/img.jpg',
+        image : '/gradiant.png',
         name :  "project name",
+         link: 'https://ui-ochre-zeta.vercel.app/', 
         detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
 
     },
     {
-        image : '/img.jpg',
-        name :  "project name",
+        image : 'videoplayer.png',
+        name :  "videoplayer",
+        link: 'https://ui-ochre-zeta.vercel.app/',
         detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
 
     },
+    {
+        image : '/wallpaper.png',
+        name :  "project name",
+        link: 'https://ui-ochre-zeta.vercel.app/',
+        detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
+
+    },
+    {
+        image : '/eccomerce.png',
+        name :  "project name",
+        link: 'https://ui-ochre-zeta.vercel.app/',
+        detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
+
+    },
+
 
 ]
 
@@ -27,6 +44,7 @@ export const ProjectGrid = () => {
        <ProjectCard
         image={project.image}
         name={project.name}
+        link={project.link}
         detail={project.detail}/>
         </div>
              

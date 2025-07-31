@@ -1,10 +1,15 @@
 import React from 'react' 
 
-const ProjectCard = ({image, name, detail}) => {
+const ProjectCard = ({image, name, detail, link}) => {
   return (
     <div className='w-full bg h-fit flex justify-center py-2 '> 
         <div className="  ">
-        <img src={image} alt="" className='md:w-[500px]  md:h-[250px] w-auto md:rounded-t-xl hover:opacity-70 transition-all duration-50 z-0 cursor-pointer' />
+        
+          
+        <img
+       onClick={() => window.open(link, '_blank')}
+         src={image} alt="" className='md:w-[500px]  md:h-[250px] w-auto md:rounded-t-xl hover:opacity-70 transition-all duration-50 z-0 cursor-pointer' />
+       
          <div className="links flex justify-between p-3 px-5 bg-links md:rounded-b-xl">
             <div className="text-white">{name}</div>
             <div className="flex gap-5">
