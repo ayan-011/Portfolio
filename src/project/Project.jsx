@@ -12,21 +12,21 @@ const PROJECTS = [
     {
         image : 'videoplayer.png',
         name :  "videoplayer",
-        link: 'https://ui-ochre-zeta.vercel.app/',
+        link: 'https://video-player-ten-azure.vercel.app/',
         detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
 
     },
     {
         image : '/wallpaper.png',
         name :  "project name",
-        link: 'https://ui-ochre-zeta.vercel.app/',
+        link: 'https://wallpaper-hub-nine.vercel.app/',
         detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
 
     },
     {
         image : '/eccomerce.png',
         name :  "project name",
-        link: 'https://ui-ochre-zeta.vercel.app/',
+        link: 'https://ecommerce-website-beryl-psi.vercel.app/',
         detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
 
     },
