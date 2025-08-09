@@ -1,5 +1,5 @@
 import React from 'react';  
-import { NavLink } from 'react-router-dom'; 
+import { NavLink , Link} from 'react-router-dom'; 
  
 const LeftSidebar = () => {
 
@@ -58,7 +58,7 @@ const LeftSidebar = () => {
               key={to}
               to={to}
               className={({ isActive }) =>
-                `p-3 font-inherit md:text-[23px] tracking-tight text-white w-full transition-all duration-200 cursor-pointer items-center justify-center flex ${isActive ? 'hover:bg-zinc-950 font-bold' : 'hover:bg-zinc-950 '}`
+                `p-3 font-inherit md:text-[23px] tracking-tight text-white w-full transition-all duration-200 cursor-pointer items-center justify-center flex ${isActive ? 'hover:bg-zinc-950 font-semibold' : 'hover:bg-zinc-950 '}`
               }
             >
               {name}
@@ -92,7 +92,9 @@ const LeftSidebar = () => {
               <div className="w-9 h-9 bg-black"></div>
               <div className="w-9 h-9 bg-black"></div>
               <div className="w-9 h-9 bg-black"></div>
+              <Link href='/projects'>              
               <div className="w-9 h-9 bg-black"></div>
+              </Link>l
             </div>
           </div>
      </div>
