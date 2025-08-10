@@ -36,7 +36,7 @@ const PROJECTS = [
 
 export const ProjectGrid = () => {
 
-    return <div className="grid grid-cols-1 gap-5 ">
+    return <div className="grid grid-cols-1 gap-5  ">
 
         {PROJECTS.map((project , index) => 
         <div key={index}>
