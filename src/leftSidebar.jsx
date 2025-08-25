@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom'; 
+import { NavLink, Link } from 'react-router-dom';  
+import ExampleWrapper from './Tools/Modal';
 
 const LeftSidebar = () => {
 
@@ -25,9 +26,16 @@ const LeftSidebar = () => {
 
 
               {/* image */}
-              <div className="shrink-0 ">
-                <div className="bg-zinc-900 border-2 h-[60px] w-[60px] md:h-[78px] md:w-[78px] rounded-full"></div>
-              </div>
+               <ExampleWrapper>
+
+              {/* <div className="shrink-0 ">
+                <div className="bg-zinc-900 border-2 h-[60px] w-[60px] md:h-[78px] md:w-[78px] rounded-full">
+                  <img src="profile.jpg" alt="" className='w-full h-full bg' />
+                </div>
+              </div> */}
+
+               </ExampleWrapper>
+                
               <div></div>
 
               {/* name & email  */}
@@ -88,9 +96,14 @@ const LeftSidebar = () => {
         </div>
 
         <div className="icons w-full h-full bg-red-90 py-6 border-t-[1px] border-b-0 border-r-0 border-l-0 border-[#3e4144] ">
-          <div className=" flex flex-col items-center  gap-6">
+          <div className=" flex flex-col items-center  gap-18 mt-9">
+            
+            <Link to="/">
             <div className="w-9 h-9 bg-black"></div>
+            </Link >
+            <Link to="/fullsrcproj">
             <div className="w-9 h-9 bg-black"></div>
+            </Link>
             <div className="w-9 h-9 bg-black"></div>
             <Link to="/projects">
               <div className="w-9 h-9 bg-black"></div>

@@ -34,20 +34,21 @@ const PROJECTS = [
 
 ]
 
-export const ProjectGrid = () => {
-
-    return <div className="grid grid-cols-1 gap-5  ">
-
-        {PROJECTS.map((project , index) => 
-        <div key={index}>
-      
-       <ProjectCard
-        image={project.image}
-        name={project.name}
-        link={project.link}
-        detail={project.detail}/>
+export const ProjectGrid = ({ mobileFullscreen }) => {
+  return (
+    <div
+      className={mobileFullscreen ? 'grid grid-cols-1 gap-12' : 'grid grid-cols-1 gap-5'}
+    >
+      {PROJECTS.map((project, index) => (
+        <div key={index} className={mobileFullscreen ? 'w-full max-w-md ' : ''}>
+          <ProjectCard
+            image={project.image}
+            name={project.name}
+            link={project.link}
+            detail={project.detail}
+          />
         </div>
-             
-        )}
+      ))}
     </div>
-}
+  );
+};
