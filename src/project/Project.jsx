@@ -3,6 +3,13 @@ import ProjectCard from "./ProjectCard"
 const PROJECTS = [
 
     {
+        image : '/sportech.png',
+        name :  "project name",
+         link: 'https://ui-ochre-zeta.vercel.app/', 
+        detail : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus tempore nulla pariatur quibusdam quam magnam nobis? Praesentium, nemo natus."
+
+    },
+    {
         image : '/gradiant.png',
         name :  "project name",
          link: 'https://ui-ochre-zeta.vercel.app/', 

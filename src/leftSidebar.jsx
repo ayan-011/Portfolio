@@ -4,8 +4,7 @@ import ExampleWrapper from './Tools/Modal';
 
 const LeftSidebar = () => {
 
-  const links = [
-    { name: 'Home', to: '/home' },
+  const links = [ 
     { name: 'About', to: '/about' },
     { name: 'Contact', to: '/contact' },
     { name: 'Projects', to: '/projects' },
@@ -17,12 +16,12 @@ const LeftSidebar = () => {
     <>
 
 
-      <div className="w-full  h-full bg-black rounded-lg   gap-y-2 md:flex flex-col   overflow-y-auto scrollbar-hidden hidden  ">
+      <div className=" w-full  h-full bg-black  rounded-lg   gap-y-1 sm:flex flex-col   overflow-y-auto scrollbar-hidden hidden  ">
 
         {/* Profile Card */}
-        <div className="rounded-2xl w-full border border-[#3e4144] flex flex-col">
+        <div className="rounded-2xl w-full border border-[#3e4144] flex flex-col  sm:p-1  ">
           <div className="w-full rounded-2xl overflow-hidden">
-            <div className="w-full flex p-3 gap-3 items-center text-white flex-wrap bg-red-90  justify-between">
+            <div className="w-full flex p-1 items-center text-white flex-wrap bg-red-90  justify-between  ">
 
 
               {/* image */}
@@ -39,15 +38,15 @@ const LeftSidebar = () => {
               <div></div>
 
               {/* name & email  */}
-              <div className="flex flex-col gap-y-1 items-start text-sm md:text-base ">
+              <div className="flex flex-col gap-y-1 items-start text-sm   ">
                 <span className="font-semibold select-none">Name Saifi</span>
                 <span className="text-[12px] text-blue-400 break-all">email@gmail.com</span>
               </div>
             </div>
 
-            <div className="text-white w-full px-3 select-none">
-              <div className="flex flex-col gap-2 p-2 ">
-                <span className="tracking-tight leading-tight text-sm text-zinc-200">
+            <div className="text-zinc-100 w-full px-3 select-none">
+              <div className="flex flex-col gap-2 py-2 ">
+                <span className="tracking-tight leading-3 text-sm text-zinc-200">
                   Lorem ipsum dolor sit amet cons
                 </span>
                 <span className="text-[11px] text-zinc-500">Location</span>
@@ -57,7 +56,7 @@ const LeftSidebar = () => {
         </div>
 
         {/* Buttons Section */}
-        <div className="rounded-2xl w-full h-screen py-8 flex flex-col relative border  border-[#3e4144] ">
+        <div className="rounded-2xl w-full h-screen py-8 flex flex-col relative border  border-[#3e4144] select-none">
 
           <div className="buttons flex flex-col">
 
@@ -89,9 +88,11 @@ const LeftSidebar = () => {
 
       {/* for mobiles */}
 
-      <div className="bg-zinc-900 w-full py-3 h-full md:hidden flex rounded-md flex-col items-center gap-2 border-[#3e4144] border-[1px]">
+      <div className="bg-zinc-900 w-full py-3 h-full sm:hidden flex rounded-md flex-col items-center gap-2 border-[#3e4144] border-[1px] ">
         <div className="profilePhoto w-fit bg-red-90 flex flex-col justify-center items-center gap-2 h-fit p-1 ">
-          <div className="w-13 h-13 rounded-full bg-black border-[1px]  border-[#3e4144]"></div>
+          <div className="w-13 h-13 rounded-full bg-black border-[1px]  border-[#3e4144]">
+            <ExampleWrapper></ExampleWrapper>
+          </div>
           <span className="name text-white text-[10px]" >Name Saifi</span>
         </div>
 

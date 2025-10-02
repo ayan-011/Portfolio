@@ -1,12 +1,45 @@
-import React from 'react'
+import ExampleWrapper from "../Tools/Modal"
+
+ 
+
+
 
 const About = () => {
   return (
-    <div className='py-32'>
-      <div className="bg-red-90 w-full p-6 py-20 border-[1px] border-l-0 border-r-0 border-t-0 border-[#3e4144] flex justify-center"> 
-        <p className='md:w-3/4 md:text-base text-[12px] leading-7'>Hi! I'm a Full Stack Developer passionate about building responsive web applications. I'm currently learning backend development in-depth, along with Data Structures and Algorithms to strengthen my problem-solving skills. I enjoy working with both frontend and backend technologies.</p>
+    <>
+      <div className='bg-zinc  w-full h-full  text-white bg-'>
+
+
+        <div className="bg-  w-full h-16 z-0"></div>
+        <div className="bg-red-90 w-full h-[70vh] flex flex-col items-center justify-center border-b border-[#3e4144]">
+
+          {/* <div className="w-full p-12  bg-whit"> </div> */}
+
+          <div className='w-3/4 select-none md:text-base text-[12px]'>
+   
+  
+            I’m a full-stack web developer who enjoys building clean and  useful web apps.
+            <br />
+            <br />
+            I work with modern tools to create responsive and fast websites.
+            <br />
+
+            I focus on writing code that is simple, clear, and easy to maintain.
+            <br />
+            I like building products that solve real problems for real users.
+            <br />
+            <br />
+            Feel free to check my work and contact me for collaboration.
+          </div>
+
+        </div>
+
+
+
+
       </div>
-    </div>
+    </>
+
   )
 }
 

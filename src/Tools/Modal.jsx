@@ -16,7 +16,7 @@ const ExampleWrapper = () => {
         className=" "
       >
          <div className="shrink-0 ">
-                <div className="bg-zinc-900 border-zinc-800 border-2 h-[60px] w-[60px] md:h-[78px] md:w-[78px] rounded-full overflow-hidden hover:opacity-80 cursor-pointer">
+                <div className="bg-zinc-900 border-zinc-800 border-2 h-[60px] w-[60px] md:h-[60px] md:w-[60px] rounded-full overflow-hidden hover:opacity-80 cursor-pointer">
                   <img src="profile.jpg" alt="" className='w-full h-full bg' />
                 </div>
               </div>
@@ -52,14 +52,14 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-99 grid place-items-center overflow-y-scroll cursor-pointer"
+          className="bg-slate-900/20 backdrop-blur p-2 fixed inset-0 z-99 grid place-items-center overflow-y-scroll cursor-pointer"
         >
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
             onClick={(e) => e.stopPropagation()}
-            className=" bg-black h-[60vh]  text-white   rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
+            className=" bg-black h-[40vh] w-[60vh] md:h-[50vh] md:w-[70vh] lg:h-[55vh] lg:w-[80vh]  text-white   rounded-lg  max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
 
 
@@ -71,7 +71,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
       </div>
 
       {/* PROFILE IMAGE */}
-      <div className="bg-zinc-900 border-black border-2 h-[60px] w-[60px] md:h-[120px] md:w-[120px] rounded-full overflow-hidden absolute ml-5 mt-16">
+      <div className="bg-zinc-900 border-black border-2 h-[60px] w-[60px] md:h-[80px] md:w-[80px] rounded-full overflow-hidden absolute ml-5 mt-16">
         <img src={activeProfile} alt="active profile" className="w-full h-full object-cover" />
       </div>
 
