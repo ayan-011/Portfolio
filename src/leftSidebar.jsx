@@ -90,7 +90,7 @@ const LeftSidebar = () => {
 
       <div className="bg-zinc-900 w-full py-3 h-full sm:hidden flex rounded-md flex-col items-center gap-2 border-[#3e4144] border-[1px] ">
         <div className="profilePhoto w-fit bg-red-90 flex flex-col justify-center items-center gap-2 h-fit p-1 ">
-          <div className="w-13 h-13 rounded-full bg-black border-[1px]  border-[#3e4144]">
+          <div className="  rounded-full bg-black    ">
             <ExampleWrapper></ExampleWrapper>
           </div>
           <span className="name text-white text-[10px]" >Name Saifi</span>

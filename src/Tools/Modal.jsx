@@ -59,7 +59,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
             onClick={(e) => e.stopPropagation()}
-            className=" bg-black h-[40vh] w-[60vh] md:h-[50vh] md:w-[70vh] lg:h-[55vh] lg:w-[80vh]  text-white   rounded-lg  max-w-lg shadow-xl cursor-default relative overflow-hidden"
+            className=" bg-black h-[40vh] w-[53vh] md:h-[50vh] md:w-[70vh] lg:h-[55vh] lg:w-[80vh]  text-white   rounded-lg  max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
 
 
